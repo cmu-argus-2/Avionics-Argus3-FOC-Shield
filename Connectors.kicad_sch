@@ -374,6 +374,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
@@ -1450,6 +1574,12 @@
 		(uuid "ff005469-9f00-41ab-b720-7e0fec00f7d0")
 	)
 	(junction
+		(at 167.64 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07795ee4-5e77-43c3-aaa1-85cfb619978b")
+	)
+	(junction
 		(at 213.36 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1496,6 +1626,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2cbd1fe-783b-4b9e-a06b-cd624456c97c")
+	)
+	(junction
+		(at 153.67 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bda7465a-02a6-43b9-a380-6f5962fa2541")
+	)
+	(junction
+		(at 153.67 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1e6087a-c182-4d0a-9b0e-60fbbdab37a2")
 	)
 	(junction
 		(at 251.46 38.1)
@@ -1548,10 +1690,6 @@
 	(no_connect
 		(at 121.92 72.39)
 		(uuid "67a5cd7f-3a91-4b5b-94e0-81b3205f72ee")
-	)
-	(no_connect
-		(at 137.16 39.37)
-		(uuid "7cc0be88-cd42-455a-a00b-414e54317c3e")
 	)
 	(no_connect
 		(at 147.32 64.77)
@@ -1632,6 +1770,26 @@
 			(type dash)
 		)
 		(uuid "0be7770a-cb10-493b-a757-26b485109ba7")
+	)
+	(wire
+		(pts
+			(xy 153.67 74.93) (xy 157.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e79bd83-e25e-4e0a-900f-a4a11b2bd952")
+	)
+	(wire
+		(pts
+			(xy 153.67 80.01) (xy 153.67 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "143c0e8d-92ab-407a-8f38-f99c2299161f")
 	)
 	(wire
 		(pts
@@ -1732,6 +1890,26 @@
 			(type dash)
 		)
 		(uuid "292938c0-69e0-40a7-97fe-ff9b8827a255")
+	)
+	(wire
+		(pts
+			(xy 153.67 72.39) (xy 153.67 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c112f45-0598-4b4c-b488-8f6ab5444533")
+	)
+	(wire
+		(pts
+			(xy 153.67 77.47) (xy 157.48 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e3d5932-c301-41c2-9871-f50dc8aa607c")
 	)
 	(wire
 		(pts
@@ -1863,6 +2041,16 @@
 		)
 		(uuid "690e0262-0f9e-4a34-bf30-14e29cad4409")
 	)
+	(wire
+		(pts
+			(xy 167.64 74.93) (xy 167.64 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a71b891-a022-4357-ab78-a7b7f3f288c8")
+	)
 	(polyline
 		(pts
 			(xy 194.31 25.4) (xy 194.31 111.76)
@@ -1975,7 +2163,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 74.93) (xy 152.4 74.93)
+			(xy 147.32 74.93) (xy 153.67 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2065,6 +2253,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 74.93) (xy 170.18 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da32e1d8-49af-4a99-83e4-95e454fac65b")
+	)
+	(wire
+		(pts
 			(xy 45.72 38.1) (xy 45.72 40.64)
 		)
 		(stroke
@@ -2095,13 +2293,33 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 77.47) (xy 152.4 77.47)
+			(xy 147.32 77.47) (xy 153.67 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ee81e7ed-b994-4a14-9589-31c1eeee009e")
+	)
+	(wire
+		(pts
+			(xy 165.1 74.93) (xy 167.64 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3099432-fe8f-4ccc-ad09-01f5a31a9119")
+	)
+	(wire
+		(pts
+			(xy 167.64 77.47) (xy 165.1 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f64504de-e76e-4468-8780-b17a2abdc663")
 	)
 	(wire
 		(pts
@@ -2148,7 +2366,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
-		(at 152.4 74.93 0)
+		(at 153.67 72.39 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2181,12 +2399,12 @@
 	)
 	(hierarchical_label "SCL"
 		(shape bidirectional)
-		(at 152.4 77.47 0)
+		(at 153.67 80.01 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "cd8fd68f-b955-4ebe-8d57-a1e7e2bea24f")
 	)
@@ -2322,7 +2540,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 251.46 45.72 0)
 			(effects
 				(font
@@ -2692,7 +2910,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 59.69 0)
 			(effects
 				(font
@@ -2796,7 +3014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 74.93 0)
 			(effects
 				(font
@@ -2977,6 +3195,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 161.29 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e5ec1b8-fbe1-455c-b3bf-19150c69c8e5")
+		(property "Reference" "R6"
+			(at 161.29 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 161.29 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 161.29 76.708 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c07477b8-b112-4dbe-9bd0-d1c9ab37348b")
+		)
+		(pin "1"
+			(uuid "dbd3c892-1164-4be8-97b9-222474a042e1")
+		)
+		(instances
+			(project ""
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 116.84 67.31 270)
 		(mirror x)
@@ -3002,7 +3288,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 67.31 0)
 			(effects
 				(font
@@ -3075,6 +3361,71 @@
 			(project "Avionics-RWboard"
 				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 137.16 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2f3bb4e-fca4-4c3c-a9c8-990b08bc3560")
+		(property "Reference" "#PWR02"
+			(at 137.16 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 137.16 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 137.16 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdc1cd86-ab06-4f00-a9ca-a382f012ebcb")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3617,7 +3968,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 77.47 0)
 			(effects
 				(font
@@ -3690,6 +4041,71 @@
 			(project "Avionics-RWboard"
 				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 170.18 74.93 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d69aa471-f938-4073-ac85-8dd4d8fa409d")
+		(property "Reference" "#PWR03"
+			(at 166.37 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 174.244 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 170.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec7642b7-0b73-4484-8015-5fb1d37f28e1")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3851,7 +4267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 57.15 0)
 			(effects
 				(font
@@ -3924,6 +4340,73 @@
 			(project "Avionics-RWboard"
 				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 161.29 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa2d1c3b-2c79-4296-9c8b-8bfe6326abbf")
+		(property "Reference" "R7"
+			(at 161.29 80.264 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 161.29 82.804 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 161.29 79.248 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 161.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ddd9974-d84c-44f8-830a-ff9faccca436")
+		)
+		(pin "1"
+			(uuid "6d7de0dc-1786-4d22-8539-a318a42d682b")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R7")
 					(unit 1)
 				)
 			)
