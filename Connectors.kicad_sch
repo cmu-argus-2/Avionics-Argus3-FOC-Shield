@@ -374,6 +374,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:Arduino_UNO_R3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1276,7 +1401,7 @@
 		)
 		(uuid "0f0abd2d-f449-47f2-a6c6-ee5d9fefb857")
 	)
-	(text "Caps to be placed close to J1 pins \nwith smallest closest\nVBAT is 8.4V max\nCaps should be rated at least 25V due to back emf from motor"
+	(text "Caps to be placed close to J1 pins \nwith smallest closest\nVIN is 8.4V max\nCaps should be rated at least 25V due to back emf from motor"
 		(exclude_from_sim no)
 		(at 211.582 64.516 0)
 		(effects
@@ -1570,7 +1695,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 59.69) (xy 121.92 59.69)
+			(xy 111.76 59.69) (xy 114.3 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1720,6 +1845,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 74.93) (xy 121.92 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62858b60-d619-47ca-bf66-ccd7ecbb6a0b")
+	)
+	(wire
+		(pts
 			(xy 223.52 38.1) (xy 223.52 43.18)
 		)
 		(stroke
@@ -1740,6 +1875,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 77.47) (xy 121.92 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c022b3f-57d1-4f59-8cca-1bbd92bf1dd9")
+	)
+	(wire
+		(pts
 			(xy 233.68 48.26) (xy 233.68 53.34)
 		)
 		(stroke
@@ -1750,7 +1895,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 57.15) (xy 121.92 57.15)
+			(xy 111.76 57.15) (xy 114.3 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1840,7 +1985,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 74.93) (xy 121.92 74.93)
+			(xy 111.76 74.93) (xy 114.3 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1870,7 +2015,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 67.31) (xy 121.92 67.31)
+			(xy 111.76 67.31) (xy 114.3 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1890,13 +2035,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 77.47) (xy 121.92 77.47)
+			(xy 111.76 77.47) (xy 114.3 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cff85c2a-35d8-47b9-bfbe-ba5104bcd2e6")
+	)
+	(wire
+		(pts
+			(xy 119.38 59.69) (xy 121.92 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d17eeb08-7563-45a1-b079-de46c0f64443")
 	)
 	(wire
 		(pts
@@ -1930,6 +2085,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 67.31) (xy 121.92 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9e1681f-2e6c-49b8-8cc4-02e378e34ba0")
+	)
+	(wire
+		(pts
 			(xy 147.32 77.47) (xy 152.4 77.47)
 		)
 		(stroke
@@ -1937,6 +2102,16 @@
 			(type default)
 		)
 		(uuid "ee81e7ed-b994-4a14-9589-31c1eeee009e")
+	)
+	(wire
+		(pts
+			(xy 119.38 57.15) (xy 121.92 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fabe414c-4f01-4b73-9f5c-1804ffd6cffe")
 	)
 	(hierarchical_label "SPEED_WAKE"
 		(shape output)
@@ -2034,7 +2209,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 220.472 46.736 0)
+			(at 219.71 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,6 +2667,214 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 116.84 59.69 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "568ebd36-bd7c-4155-8ce0-bb22755e16d4")
+		(property "Reference" "R1"
+			(at 114.046 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 116.332 64.262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0402JR-070RL"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "311-0.0JRCT-ND"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0442933-cd55-4b95-8dd6-8620134f0275")
+		)
+		(pin "2"
+			(uuid "861a7674-4047-4c0a-a5a8-5c3bf4af67bb")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 116.84 74.93 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "5708c1ff-d314-454c-a74d-7ac9f1736729")
+		(property "Reference" "R3"
+			(at 114.046 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 116.332 79.502 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0402JR-070RL"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "311-0.0JRCT-ND"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bcceb44-8df2-4760-a23d-3face9f92042")
+		)
+		(pin "2"
+			(uuid "e545045f-d27e-4b50-abf4-1e8ace90e64c")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Argus_RW_Library:5001")
 		(at 251.46 30.48 90)
 		(unit 1)
@@ -2594,6 +2977,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 116.84 67.31 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "8ecd276e-b006-4cbc-a8df-987255564283")
+		(property "Reference" "R2"
+			(at 114.046 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 116.332 71.882 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0402JR-070RL"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "311-0.0JRCT-ND"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f026a211-29b5-4224-be6f-81d9c1b21397")
+		)
+		(pin "2"
+			(uuid "2fa20050-cc9a-40ea-bb37-bd7fc33d26ee")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 223.52 45.72 180)
 		(unit 1)
@@ -2612,7 +3099,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 230.632 46.736 0)
+			(at 229.87 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +3203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VMAIN"
+		(property "Value" "VIN"
 			(at 45.72 28.956 0)
 			(effects
 				(font
@@ -3057,7 +3544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VMAIN"
+		(property "Value" "VIN"
 			(at 213.36 31.496 0)
 			(effects
 				(font
@@ -3099,6 +3586,110 @@
 			(project "Avionics-RWboard"
 				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 116.84 77.47 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "cc063ca6-1481-441c-956a-e6211d5cf238")
+		(property "Reference" "R4"
+			(at 114.046 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 116.332 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0402JR-070RL"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "311-0.0JRCT-ND"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b941abd5-bf2e-40d0-9dab-139c76582c05")
+		)
+		(pin "2"
+			(uuid "0ca30418-05d7-49f5-aa3a-6a5056e62014")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3229,6 +3820,110 @@
 			(project "Avionics-RWboard"
 				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 116.84 57.15 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f246478b-db46-4d4e-bc2d-e51b5e51d9ff")
+		(property "Reference" "R26"
+			(at 119.634 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 117.348 52.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RC0402JR-070RL"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "311-0.0JRCT-ND"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1ca6509-c363-4df6-8b48-bb66a654cbcb")
+		)
+		(pin "2"
+			(uuid "140335fc-8a7b-49d9-948f-5b2579ba76f9")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/e7579daf-9390-453f-be6d-47a1e5e63ac9"
+					(reference "R26")
 					(unit 1)
 				)
 			)

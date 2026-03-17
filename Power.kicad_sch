@@ -803,6 +803,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 92.71) (xy 104.14 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06eb3e2a-1a75-4688-8e05-e89282479164")
+	)
+	(wire
+		(pts
 			(xy 176.53 97.79) (xy 176.53 95.25)
 		)
 		(stroke
@@ -960,16 +970,6 @@
 			(type default)
 		)
 		(uuid "66795fe4-36a3-4c61-928a-9fc75f38a17e")
-	)
-	(wire
-		(pts
-			(xy 92.71 95.25) (xy 104.14 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cccf58a-7d83-4c8f-b09c-64ccd561e3bb")
 	)
 	(polyline
 		(pts
@@ -1210,16 +1210,6 @@
 			(justify left bottom)
 		)
 		(uuid "81a8c2ba-4fc5-4d68-9707-e2f464917824")
-	)
-	(label "VMAIN"
-		(at 92.71 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dcd10163-1058-4016-bdb2-41a259af8b2b")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -1776,7 +1766,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "709d017d-1bd7-4151-b440-5f7923b5876a")
 		(property "Reference" "L1"
 			(at 140.589 90.17 0)
@@ -1787,7 +1776,7 @@
 			)
 		)
 		(property "Value" "1UH"
-			(at 144.526 97.282 0)
+			(at 140.97 97.536 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -1823,13 +1812,12 @@
 			)
 		)
 		(property "Part" "HCM1A1104V2-1R0-R"
-			(at 146.558 99.568 0)
+			(at 141.732 87.122 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/eaton-electronics-division/HCM1A1104V2-1R0-R/10479159?s=N4IgTCBcDaIBIGECyBGAgilAGALANTAFoUAlLQkkAXQF8g"
@@ -2250,6 +2238,71 @@
 			(project "Avionics-RWboard"
 				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/a3f3b3cb-ad78-4c13-ba45-eb5d7efe511d"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 104.14 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbdcf6d5-ac9c-49f2-8bd9-b056d1868627")
+		(property "Reference" "#PWR01"
+			(at 104.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VIN"
+			(at 104.14 87.884 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 104.14 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aac6fea1-245b-4bb1-9079-a0d145eece04")
+		)
+		(instances
+			(project "Avionics-RWboard"
+				(path "/833dc880-24c2-430b-8cf7-cc984eb87a9d/a3f3b3cb-ad78-4c13-ba45-eb5d7efe511d"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
