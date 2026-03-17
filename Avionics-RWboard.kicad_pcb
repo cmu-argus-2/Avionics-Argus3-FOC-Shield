@@ -106,9 +106,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "./Gerbers/")
 		)
 	)
 	(net 0 "")
@@ -6013,7 +6013,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "2b1dad82-233d-4155-8c1e-79667da1b9cb")
 		)
 		(pad "41" thru_hole circle
 			(at -1.5 1 90)
@@ -6024,7 +6024,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "72abbae0-b144-41b5-96a5-b5244e919fb6")
 		)
 		(pad "41" thru_hole circle
 			(at -0.5 -2 90)
@@ -6035,7 +6035,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "288e54e2-fa6a-43c6-abd4-acbbb06fe6d9")
 		)
 		(pad "41" thru_hole circle
 			(at -0.5 -1 90)
@@ -6046,7 +6046,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "7d0d3015-1414-4eda-b1b9-8a8cf4bcb4c1")
 		)
 		(pad "41" thru_hole circle
 			(at -0.5 0 90)
@@ -6057,7 +6057,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "89942d58-34aa-45e8-8e91-5653c5974ad1")
 		)
 		(pad "41" thru_hole circle
 			(at -0.5 1 90)
@@ -6068,7 +6068,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "362ca547-f5e7-41f5-bf77-3eabbd739ab9")
 		)
 		(pad "41" thru_hole circle
 			(at -0.5 2 90)
@@ -6079,7 +6079,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "c6a58b0d-c4e4-470d-84b8-4d11dbe52f6a")
 		)
 		(pad "41" smd rect
 			(at 0 0 90)
@@ -6088,7 +6088,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "e1abb56f-044a-4f39-bd31-911e34541258")
 		)
 		(pad "41" thru_hole circle
 			(at 0.5 -2 90)
@@ -6099,7 +6099,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "9ac5ffe5-f9d1-4edf-9899-25a47488354d")
 		)
 		(pad "41" thru_hole circle
 			(at 0.5 -1 90)
@@ -6110,7 +6110,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "f14b9cf0-8e61-4830-a9ef-4d730c47d49a")
 		)
 		(pad "41" thru_hole circle
 			(at 0.5 0 90)
@@ -6121,7 +6121,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "b16fe156-a7ce-406a-8d41-1a70a052d17c")
 		)
 		(pad "41" thru_hole circle
 			(at 0.5 1 90)
@@ -6132,7 +6132,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "a603b9a3-7a65-4b31-a160-27978327560f")
 		)
 		(pad "41" thru_hole circle
 			(at 0.5 2 90)
@@ -6143,7 +6143,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "fb008d1c-a6d4-40d9-b77b-09694535156a")
 		)
 		(pad "41" thru_hole circle
 			(at 1.5 -1 90)
@@ -6154,7 +6154,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "f9bcabbd-0e96-43bc-a6ef-ec14e4d54dcf")
 		)
 		(pad "41" thru_hole circle
 			(at 1.5 0 90)
@@ -6165,7 +6165,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "c849c22e-a3b2-4119-8acc-87c7c6bc50a0")
 		)
 		(pad "41" thru_hole circle
 			(at 1.5 1 90)
@@ -6176,7 +6176,7 @@
 			(net 14 "AGND")
 			(pinfunction "Thermal_Pad_(GND)")
 			(pintype "power_out")
-			(uuid "e3d1d2b8-a523-4591-a401-acb9785f1621")
+			(uuid "80635bde-0159-4095-979d-92cb88bd447a")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/Argus_RW_Library.pretty/RGF0040F.stp"
